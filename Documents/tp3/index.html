@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veterinaria-Patitas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Patitas-COCO</h1>
+      <p>"Reservá el turno de tu mascota online"</p>
+    </header>
+    <main>
+      <form class="form">
+        
+        <section>
+          <h3>Tus Datos</h3>
+          <label for="nombre">Datos Personales</label>
+          <input type="text" id="nombre" name="nombre" required />
+          
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          
+          <label for="telefono">Teléfono</label>
+          <input type="text" id="telefono" name="telefono" />
+        </section>
+
+        <section>
+          <h3>Datos de tu Mascota</h3>
+          <label for="mascota">Nombre de tu Mascota</label>
+          <input type="text" id="mascota" name="mascota" required />
+          
+          <label for="especie">Especie</label>
+          <select name="especie" id="especie">
+            <option value="">-- Elegí una --</option>
+            <option value="Gato">Terrestres </option>
+            <option value="Perro">Terrestres </option>
+            <option value="Ave">Voladores </option>
+            <option value="Pez">Acuático </option>
+          </select>
+          
+          <label for="peso">Peso  Aproximado</label>
+          <input type="number" id="peso" name="peso" min="0" />
+        </section>
+
+        <section>
+          <label for="Control">Control</label>
+          <input type="text" id="Control" name="Control" required />
+        </section>
+
+        <section>
+          <h3>Elegí los Días Disponibles</h3>
+          
+          <div class="checkbox-group">
+            <input type="checkbox" id="lunes" name="dia_lunes" value="lunes" />
+            <label for="lunes">Día Lunes</label>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" id="miercoles" name="dia_miercoles" value="miercoles" />
+            <label for="miercoles">Día Miércoles</label>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" id="viernes" name="dia_viernes" value="viernes" />
+            <label for="viernes">Día Viernes</label>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" id="sabado" name="dia_sabado" value="sabado" />
+            <label for="sabado">Día Sábado</label>
+          </div>
+
+          <br />
+
+          <label for="horario">Elegí un horario</label>
+          <select name="horario" id="horario">
+            <option value="">-- Elegí un rango --</option>
+            <option value="manana">Mañana (9hs a 12 hs)</option>
+            <option value="tarde">Tarde (14hs a 18 hs)</option>
+            <option value="noche">Noche (19hs a 21 hs)</option>
+          </select> 
+        </section>
+
+        <section>
+          <label for="comentarios">¿Querés contarnos algo más sobre tu mascota?</label>
+          <textarea name="comentarios" id="comentarios" rows="4"></textarea>
+        </section>
+
+        <section>
+          <button type="submit" class="button">Solicitar turno</button>
+          <p>Veterinaria Patitas-COCO — Buenos Aires</p>
+        </section>
+
+      </form>
+    </main>
+  </body>
+</html>
